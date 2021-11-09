@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Result</title>
+
+    <meta
+      name="description"
+      content="N.Agency - Responisve Landing Page for Agency"
+    />
+    <meta name="keywords" content="" />
+    <meta name="author" content="tabthemes" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/apple-touch-icon-114x114.png"
+    />
+
+    <!-- Google Web Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS Files For Plugin -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/YTPlayer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="inc/owlcarousel/css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="inc/owlcarousel/css/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="inc/revolution/css/settings.css" />
+    <link rel="stylesheet" href="inc/revolution/css/layers.css" />
+    <link rel="stylesheet" href="inc/revolution/css/navigation.css" />
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body
+    class="homepage_parallax"
+    data-spy="scroll"
+    data-target=".navbar-fixed-top"
+    data-offset="100"
+  >
+    <!--firebase config-->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+    <script type="text/javascript" src="firebase\config.js"></script>
+    <script type="text/javascript" src="firebase\write.js"></script>
+    <script type="text/javascript" src="firebase\read.js"></script>
+
+    <!-- Kakao api -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script>
+      function shareKakao() {
+        // 사용할 앱의 JavaScript 키 설정
+        Kakao.init("7e08f747fd1ffbb228201979d0b99c84");
+
+        // 카카오링크 버튼 생성
+        Kakao.Link.createDefaultButton({
+          container: "#btnKakao", // 카카오공유버튼ID
+          objectType: "feed",
+          content: {
+            title: "편나와", // 보여질 제목
+            description: "편의점 다나와 웹사이트입니다.", // 보여질 설명
+            imageUrl: "http://localhost:5000", // 콘텐츠 URL
+            link: {
+              mobileWebUrl: "http://localhost:5000",
+              webUrl: "http://localhost:5000",
+            },
+          },
+        });
+      }
+    </script>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="spinner"></div>
+    </div>
+    <!-- End Preloader-->
+
+    <!-- Start Price -->
+    <section id="price" class="p-top-80 p-bottom-50">
+      <div class="container">
+        <div class="row">
+          <!-- Section Title -->
+          <div class="section-title text-center m-bottom-40">
+            <h2
+              class="wow fadeInDown"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+              id="main_title"
+            >
+              Product Name
+            </h2>
+            <div
+              class="divider-center-small wow zoomIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            ></div>
+          </div>
+
+          <!-- === Price Item 1 === -->
+          <div class="col-md-3 col-sm-6 p-bottom-30">
+            <div
+              class="price-item text-center wow flipInX"
+              data-wow-delay="0.6s"
+            >
+              <div class="price-item-header">
+                <h4>7-ELEVEN</h4>
+              </div>
+              <ul class="price-item-features list-unstyled">
+                <li id="item1_name"></li>
+                <li id="item1_type"></li>
+                <li id="item1_EventType"></li>
+                <li id="item1_img"></li>
+              </ul>
+              <div class="price-item-price">
+                <p class="big" id="item1_price">
+                  <span class="currency">$</span>
+                </p>
+              </div>
+              <a
+                href="#"
+                class="btn btn-main btn-transparent"
+                data-toggle="modal"
+                data-target="#mapmodal"
+                >Map</a
+              >
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <!-- === Price Item 2 === -->
+          <div class="col-md-3 col-sm-6 p-bottom-30">
+            <div
+              class="price-item text-center wow flipInX"
+              data-wow-delay="0.7s"
+            >
+              <div class="price-item-header">
+                <h4>CU</h4>
+              </div>
+              <ul class="price-item-features list-unstyled">
+                <li id="item2_name"></li>
+                <li id="item2_type"></li>
+                <li id="item2_EventType"></li>
+                <li id="item2_img"></li>
+              </ul>
+              <div class="price-item-price">
+                <p class="big" id="item2_price">
+                  <span class="currency">원</span>
+                </p>
+              </div>
+              <a
+                href="#"
+                class="btn btn-main btn-transparent"
+                data-toggle="modal"
+                data-target="#mapmodal"
+                >Map</a
+              >
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <!-- === Price Item 3 === -->
+          <div class="col-md-3 col-sm-6 p-bottom-30">
+            <div
+              class="price-item text-center wow flipInX"
+              data-wow-delay="0.8s"
+            >
+              <div class="price-item-header">
+                <h4>E-MART</h4>
+              </div>
+              <ul class="price-item-features list-unstyled">
+                <li id="item3_name"></li>
+                <li id="item3_type"></li>
+                <li id="item3_EventType"></li>
+                <li id="item3_img"></li>
+              </ul>
+              <div class="price-item-price">
+                <p class="big" id="item3_price">
+                  <span class="currency">원</span>
+                </p>
+              </div>
+              <a
+                href="#"
+                class="btn btn-main btn-transparent"
+                data-toggle="modal"
+                data-target="#mapmodal"
+                >Map</a
+              >
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <!-- === Price Item 4 === -->
+          <div class="col-md-3 col-sm-6 p-bottom-30">
+            <div
+              class="price-item text-center wow flipInX"
+              data-wow-delay="0.9s"
+            >
+              <div class="price-item-header">
+                <h4>E-MART</h4>
+              </div>
+              <ul class="price-item-features list-unstyled">
+                <li id="item4_name"></li>
+                <li id="item4_type"></li>
+                <li id="item4_EventType"></li>
+                <li id="item4_img"></li>
+              </ul>
+              <div class="price-item-price">
+                <p class="big" id="item4_price">
+                  <span class="currency">원</span>
+                </p>
+              </div>
+              <a
+                href="#"
+                class="btn btn-main btn-transparent"
+                data-toggle="modal"
+                data-target="#mapmodal"
+                >Map</a
+              >
+            </div>
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- End Price -->
+
+    <section></section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md col-sm-1 p-bottom-30 text-center">
+          <a
+            data-scroll
+            onClick="location.href='index.html'"
+            class="btn btn-main btn-theme"
+            >처음으로</a
+          >
+        </div>
+        <div class="col-md col-sm-1 p-bottom-30 text-center">
+          <a
+            data-scroll
+            class="btn btn-main btn-theme"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            >좋아요!</a
+          >
+        </div>
+        <div class="col-md col-sm-1 p-bottom-30 text-center">
+          <a
+            data-scroll
+            class="btn btn-main btn-theme"
+            id="btnKakao"
+            onclick="shareKakao()"
+            >카카오톡 공유하기!</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              편의점 다나와! 좋아해 주셔서 감사합니다 :)
+            </h5>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              닫기
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onClick="location.href='index.html'"
+            >
+              처음으로 돌아가기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 지도 표시 api -->
+    <div
+      class="modal fade"
+      id="mapmodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div id="map" style="width: 550px; height: 300px"></div>
+          <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7e08f747fd1ffbb228201979d0b99c84"></script>
+          <script>
+            var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+              mapOption = {
+                center: new kakao.maps.LatLng(37.56596, 126.97865), // 지도의 중심좌표
+                level: 3, // 지도의 확대 레벨
+                mapTypeId: kakao.maps.MapTypeId.ROADMAP, // 지도종류
+              };
+
+            // 지도를 생성한다
+            var map = new kakao.maps.Map(mapContainer, mapOption);
+
+            // 지도에 확대 축소 컨트롤을 생성한다
+            var zoomControl = new kakao.maps.ZoomControl();
+
+            // 지도 중심 좌표 변화 이벤트를 등록한다
+            kakao.maps.event.addListener(map, "center_changed", function () {
+              console.log(
+                "지도의 중심 좌표는 " + map.getCenter().toString() + " 입니다."
+              );
+            });
+
+            // 지도 클릭 이벤트를 등록한다 (좌클릭 : click, 우클릭 : rightclick, 더블클릭 : dblclick)
+            kakao.maps.event.addListener(map, "click", function (mouseEvent) {
+              console.log(
+                "지도에서 클릭한 위치의 좌표는 " +
+                  mouseEvent.latLng.toString() +
+                  " 입니다."
+              );
+            });
+
+            // 지도에 마커를 생성하고 표시한다
+            var marker = new kakao.maps.Marker({
+              position: new kakao.maps.LatLng(37.56588, 126.97746), // 마커의 좌표
+              map: map, // 마커를 표시할 지도 객체
+            });
+          </script>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <small class="copyright pull-left"
+          >SKKU-OpenSource_2021Project
+          <a href="https://www.skku.edu/skku/index.do"> Website</a>.</small
+        >
+        <div class="social-icon pull-right">
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-google"></i></a>
+        </div>
+        <!-- /social-icon -->
+      </div>
+      <!-- /container -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Back to top -->
+    <a href="#" id="back-to-top" title="Back to top"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+    <!-- /Back to top -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Components Plugin -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="inc/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="inc/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="inc/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- Contact Form -->
+    <script src="js/contact.js"></script>
+
+    <!-- Custom Plugin -->
+    <script src="js/custom.js"></script>
+
+    <!-- RS Plugin Extensions -->
+    <script src="inc/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+
+    <script>
+      var tpj = jQuery;
+
+      var revapi280;
+      tpj(document).ready(function () {
+        if (tpj("#rev_slider_280_1").revolution == undefined) {
+          revslider_showDoubleJqueryError("#rev_slider_280_1");
+        } else {
+          revapi280 = tpj("#rev_slider_280_1")
+            .show()
+            .revolution({
+              sliderType: "standard",
+              sliderLayout: "fullscreen",
+              dottedOverlay: "none",
+              delay: 90000,
+              navigation: {
+                keyboardNavigation: "off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation: "off",
+                onHoverStop: "off",
+                touch: {
+                  touchenabled: "on",
+                  swipe_threshold: 75,
+                  swipe_min_touches: 1,
+                  swipe_direction: "horizontal",
+                  drag_block_vertical: false,
+                },
+                arrows: {
+                  style: "uranus",
+                  enable: true,
+                  hide_onmobile: true,
+                  hide_under: 496,
+                  hide_onleave: true,
+                  hide_delay: 200,
+                  hide_delay_mobile: 1200,
+                  tmp: "",
+                  left: {
+                    h_align: "left",
+                    v_align: "center",
+                    h_offset: 20,
+                    v_offset: 0,
+                  },
+                  right: {
+                    h_align: "right",
+                    v_align: "center",
+                    h_offset: 20,
+                    v_offset: 0,
+                  },
+                },
+              },
+              responsiveLevels: [1200, 991, 767, 480],
+              visibilityLevels: [1200, 991, 767, 480],
+              gridwidth: [1200, 991, 767, 480],
+              gridheight: [868, 768, 960, 720],
+              lazyType: "none",
+              parallax: {
+                type: "mouse+scroll",
+                origo: "slidercenter",
+                speed: 2000,
+                levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+                disable_onmobile: "on",
+              },
+              shadow: 0,
+              spinner: "spinner2",
+              autoHeight: "off",
+              fullScreenAutoWidth: "off",
+              fullScreenAlignForce: "off",
+              fullScreenOffsetContainer: "",
+              fullScreenOffset: "0",
+              disableProgressBar: "on",
+              hideThumbsOnMobile: "off",
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              debugMode: false,
+              fallbacks: {
+                simplifyAll: "off",
+                disableFocusListener: false,
+              },
+            });
+        }
+      }); /*ready*/
+    </script>
+  </body>
+</html>

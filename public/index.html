@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>편나와</title>
+
+    <!-- Google Web Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS Files For Plugin -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/YTPlayer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="inc/owlcarousel/css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="inc/owlcarousel/css/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="inc/revolution/css/settings.css" />
+    <link rel="stylesheet" href="inc/revolution/css/layers.css" />
+    <link rel="stylesheet" href="inc/revolution/css/navigation.css" />
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body
+    class="homepage_parallax"
+    data-spy="scroll"
+    data-target=".navbar-fixed-top"
+    data-offset="100"
+  >
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="spinner"></div>
+    </div>
+    <!-- End Preloader-->
+
+    <!-- Start Navigation -->
+    <header class="nav-transparent" id="home">
+      <nav class="navbar navbar-fixed-top">
+        <div class="navigation">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#navbar-collapse"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <!-- Logo 없앰 -->
+              </div>
+              <!-- end navbar-header -->
+
+              <div class="col-md-8 col-xs-12 nav-wrap">
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a data-scroll href="#home">Home</a></li>
+                    <li><a data-scroll href="#services">사용방법</a></li>
+                    <li><a data-scroll href="#about">개발 과정</a></li>
+                    <li><a data-scroll href="#team">팀 소개</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!--/.container -->
+        </div>
+        <!-- /.navigation-overlay -->
+      </nav>
+      <!-- /.navbar -->
+    </header>
+    <!-- End Navigation -->
+
+    <!-- Start Intro -->
+    <section
+      class="parallax-bg"
+      style="background-image: url(img/index_2-banner.jpg)"
+      data-stellar-background-ratio="0.5"
+    >
+      <!-- Section Title -->
+      <div class="js-height-full container">
+        <div class="intro-content white-color text-center vertical-section">
+          <div class="vertical-content">
+            <h1
+              class="wow zoomIn m-bottom-20"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            >
+              편의점 다 나와!!
+            </h1>
+
+            <!-- scanner 카메라 여는 페이지 삽입 -->
+            <a
+              data-scroll
+              onClick="location.href='result.html'"
+              class="btn btn-main btn-theme wow fadeInUp"
+              data-wow-delay="0.8s"
+              >Go Scan</a
+            >
+          </div>
+        </div>
+        <!-- Scroll Down -->
+        <div class="scroll-next">
+          <a data-scroll href="#services" class="scroll-down"
+            ><i class="fa fa-angle-down scroll-down-icon"></i
+          ></a>
+        </div>
+        <!-- End Scroll Down -->
+      </div>
+    </section>
+    <!-- End Intro -->
+
+    <!-- Start 사용방법 -->
+    <section id="services" class="p-top-80 p-bottom-40">
+      <div class="container">
+        <div class="row">
+          <!-- Service Item 1 -->
+          <div class="col-md-4 m-bottom-20">
+            <div
+              class="service service-type-2 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            >
+              <div class="service-header clearfix">
+                <div class="service-icon pull-left">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <h4>1단계: 탐색하기</h4>
+              </div>
+              <div class="service-text">
+                <p>
+                  편의점에 가서 물건을 사려고 한다. 가격을 보니 1000원이다. 다른
+                  마트에서는 얼마일까 궁금증이 생긴다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <!-- Service Item 2 -->
+          <div class="col-md-4 m-bottom-20">
+            <div
+              class="service service-type-2 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.8s"
+            >
+              <div class="service-header clearfix">
+                <div class="service-icon pull-left">
+                  <i class="fa fa-barcode" aria-hidden="true"></i>
+                </div>
+                <h4>2단계: 비교하기</h4>
+              </div>
+              <div class="service-text">
+                <p>
+                  이 웹페이지에서 'go scan' 버튼을 누르면 사진을 찍는 카메라가
+                  나타난다. 바코드를 찍으면 근처 편의점에서 같은 물건이 얼마에
+                  팔리고 있는지 정보가 뜬다!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <!-- Service Item 3 -->
+          <div class="col-md-4 m-bottom-20">
+            <div
+              class="service service-type-2 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="1s"
+            >
+              <div class="service-header clearfix">
+                <div class="service-icon pull-left">
+                  <i class="fa fa-credit-card" aria-hidden="true"></i>
+                </div>
+                <h4>3단계: 결정하기</h4>
+              </div>
+              <div class="service-text">
+                <p>
+                  결과 창을 보면 다른 지점에서 더 싸게 파는 곳 정보와 행사
+                  정보를 확인할 수 있고, 위치를 알 수도 있다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- End Services -->
+
+    <!-- Start Call to Demo Vedio -->
+    <section class="p-top-60 p-bottom-60">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 c2a-content text-center">
+            <!-- Text -->
+            <h2 class="wow fadeInDown" data-wow-delay="0.3s">
+              구체적인 사용 방법을 영상으로 확인하세요.
+            </h2>
+            <!-- Button 영상 url로 이동-->
+            <a
+              data-scroll
+              onClick="location.href='index.html'"
+              class="btn btn-main btn-theme wow fadeInUp"
+              data-wow-delay="0.5s"
+              >Video</a
+            >
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- End Call to Action -->
+
+    <!-- Start About -->
+    <section id="about" class="light-bg p-top-80 p-bottom-40">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-bottom-30">
+            <img
+              src="img/about-us.jpg"
+              alt="About Image"
+              class="img-responsive wow fadeInLeft"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            />
+          </div>
+          <!-- /.col -->
+
+          <div class="col-md-6">
+            <!-- Section Title -->
+            <div class="m-bottom-30">
+              <h2
+                class="wow fadeInRight"
+                data-wow-duration="1s"
+                data-wow-delay="0.6s"
+              >
+                개발 과정
+              </h2>
+              <div
+                class="divider-small wow zoomIn"
+                data-wow-duration="1s"
+                data-wow-delay="0.7s"
+              ></div>
+            </div>
+            <div
+              class="wow fadeInRight"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            >
+              <p>개발 동기, 과정에 대한 설명</p>
+              <p>개발 동기, 과정에 대한 설명</p>
+            </div>
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- End About -->
+
+    <!-- Start Skill -->
+    <section class="light-bg p-bottom-60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- === Progress item 1 === -->
+            <div class="progress-heading clearfix wow fadeIn">
+              <h6 class="pull-left">Coding</h6>
+              <p class="pull-right">80%</p>
+            </div>
+            <div class="progress progress-thin">
+              <div
+                class="progress-bar wow zoomIn"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 80%"
+                data-wow-delay="0.3s"
+              ></div>
+            </div>
+
+            <!-- === Progress item 2 === -->
+            <div class="progress-heading clearfix wow fadeIn">
+              <h6 class="pull-left">Design</h6>
+              <p class="pull-right">90%</p>
+            </div>
+            <div class="progress progress-thin">
+              <div
+                class="progress-bar wow zoomIn"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 90%"
+                data-wow-delay="0.3s"
+              ></div>
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <div class="col-md-6">
+            <!-- === Progress item 3 === -->
+            <div class="progress-heading clearfix wow fadeIn">
+              <h6 class="pull-left">Documentation</h6>
+              <p class="pull-right">0%</p>
+            </div>
+            <div class="progress progress-thin">
+              <div
+                class="progress-bar wow zoomIn"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 0%"
+                data-wow-delay="0.3s"
+              ></div>
+            </div>
+
+            <!-- === Progress item 4 === -->
+            <div class="progress-heading clearfix wow fadeIn">
+              <h6 class="pull-left">Presentation</h6>
+              <p class="pull-right">0%</p>
+            </div>
+            <div class="progress progress-thin">
+              <div
+                class="progress-bar wow zoomIn"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 0%"
+                data-wow-delay="0.3s"
+              ></div>
+            </div>
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- End Skill -->
+
+    <!-- Start Team -->
+    <section id="team" class="p-top-80 p-bottom-50">
+      <div class="container">
+        <div class="row">
+          <!-- Section Title -->
+          <div class="section-title text-center m-bottom-40">
+            <h2
+              class="wow fadeInDown"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            >
+              팀 소개
+            </h2>
+            <div
+              class="divider-center-small wow zoomIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            ></div>
+            <p
+              class="section-subtitle wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            ></p>
+          </div>
+
+          <!-- === Team Item 1 === -->
+          <div class="col-md-4 col-sm-6 col-xs-12 p-bottom-30">
+            <div
+              class="team-item wow zoomIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.9s"
+            >
+              <div class="team-item-image">
+                <img src="img/team/1.jpg" alt="" />
+              </div>
+              <div class="team-item-info">
+                <div class="team-item-name">Suyoung Bae</div>
+                <div class="team-item-position">Software 2018312958</div>
+                <div class="team-item-position">
+                  web page, server, documentation, presentation
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <!-- === Team Item 2 === -->
+          <div class="col-md-4 col-sm-6 col-xs-12 p-bottom-30">
+            <div
+              class="team-item wow zoomIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.9s"
+            >
+              <div class="team-item-image">
+                <img src="img/team/2.jpg" alt="" />
+              </div>
+              <div class="team-item-info">
+                <div class="team-item-name">Laura Doe</div>
+                <div class="team-item-position">Creative Director</div>
+                <div class="team-item-position">
+                  crawling, documentation, ppt
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <!-- === Team Item 3 === -->
+          <div class="col-md-4 col-sm-6 col-xs-12 p-bottom-30">
+            <div
+              class="team-item wow zoomIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.9s"
+            >
+              <div class="team-item-image">
+                <img src="img/team/3.jpg" alt="" />
+              </div>
+              <div class="team-item-info">
+                <div class="team-item-name">Andy Doe</div>
+                <div class="team-item-position">Marketing</div>
+                <div class="team-item-position">
+                  Connecting the camera, documentation, video
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- End Team -->
+
+    <!-- Start Stat -->
+    <section
+      id="stat"
+      class="parallax-bg overlay-dark p-top-80 p-bottom-40 white-color"
+      style="background-image: url(img/stat-bg.jpg)"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- === Stats Item 1 === -->
+          <div class="col-md-3 col-sm-6 p-bottom-40">
+            <div
+              class="stat-item stat-item-type-2 wow zoomIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
+            >
+              <div class="stat-item-icon">
+                <i class="fa fa-briefcase"></i>
+              </div>
+              <div class="stat-item-number">0</div>
+              <div class="stat-item-text" id="update">업데이트 횟수</div>
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <!-- === Stats Item 2 === -->
+          <div class="col-md-3 col-sm-6 p-bottom-40">
+            <div
+              class="stat-item stat-item-type-2 wow zoomIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.4s"
+            >
+              <div class="stat-item-icon">
+                <i class="fa fa-users"></i>
+              </div>
+              <div class="stat-item-number">200</div>
+              <div class="stat-item-text" id="count">웹 실행 횟수</div>
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <!-- === Stats Item 3 === -->
+          <div class="col-md-3 col-sm-6 p-bottom-40">
+            <div
+              class="stat-item stat-item-type-2 wow zoomIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <div class="stat-item-icon">
+                <i class="fa fa-thumbs-up"></i>
+              </div>
+              <div class="stat-item-number">125</div>
+              <div class="stat-item-text" id="like">좋아요 수</div>
+            </div>
+          </div>
+          <!-- /.col -->
+
+          <!-- === Stats Item 4 === -->
+          <div class="col-md-3 col-sm-6 p-bottom-40">
+            <div
+              class="stat-item stat-item-type-2 wow zoomIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            >
+              <div class="stat-item-icon">
+                <i class="fa fa-trophy"></i>
+              </div>
+              <div class="stat-item-number">500</div>
+              <div class="stat-item-text" id="share">공유 횟수</div>
+            </div>
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- End Stat -->
+
+    <!-- Start Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <small class="copyright pull-left"
+          >SKKU-OpenSource_2021Project
+          <a href="https://www.skku.edu/skku/index.do"> WebSite</a>.</small
+        >
+        <div class="social-icon pull-right">
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-google"></i></a>
+        </div>
+        <!-- /social-icon -->
+      </div>
+      <!-- /container -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Back to top -->
+    <a href="#" id="back-to-top" title="Back to top"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+    <!-- /Back to top -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Components Plugin -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="inc/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="inc/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="inc/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- Contact Form -->
+    <script src="js/contact.js"></script>
+
+    <!-- Custom Plugin -->
+    <script src="js/custom.js"></script>
+
+    <!-- RS Plugin Extensions -->
+    <script src="inc/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="inc/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+
+    <!--firebase config-->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="firebase\config.js"></script>
+
+    <script type="text/javascript" src="firebase\config.js"></script>
+
+    <script>
+      var tpj = jQuery;
+
+      var revapi280;
+      tpj(document).ready(function () {
+        if (tpj("#rev_slider_280_1").revolution == undefined) {
+          revslider_showDoubleJqueryError("#rev_slider_280_1");
+        } else {
+          revapi280 = tpj("#rev_slider_280_1")
+            .show()
+            .revolution({
+              sliderType: "standard",
+              sliderLayout: "fullscreen",
+              dottedOverlay: "none",
+              delay: 90000,
+              navigation: {
+                keyboardNavigation: "off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation: "off",
+                onHoverStop: "off",
+                touch: {
+                  touchenabled: "on",
+                  swipe_threshold: 75,
+                  swipe_min_touches: 1,
+                  swipe_direction: "horizontal",
+                  drag_block_vertical: false,
+                },
+                arrows: {
+                  style: "uranus",
+                  enable: true,
+                  hide_onmobile: true,
+                  hide_under: 496,
+                  hide_onleave: true,
+                  hide_delay: 200,
+                  hide_delay_mobile: 1200,
+                  tmp: "",
+                  left: {
+                    h_align: "left",
+                    v_align: "center",
+                    h_offset: 20,
+                    v_offset: 0,
+                  },
+                  right: {
+                    h_align: "right",
+                    v_align: "center",
+                    h_offset: 20,
+                    v_offset: 0,
+                  },
+                },
+              },
+              responsiveLevels: [1200, 991, 767, 480],
+              visibilityLevels: [1200, 991, 767, 480],
+              gridwidth: [1200, 991, 767, 480],
+              gridheight: [868, 768, 960, 720],
+              lazyType: "none",
+              parallax: {
+                type: "mouse+scroll",
+                origo: "slidercenter",
+                speed: 2000,
+                levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+                disable_onmobile: "on",
+              },
+              shadow: 0,
+              spinner: "spinner2",
+              autoHeight: "off",
+              fullScreenAutoWidth: "off",
+              fullScreenAlignForce: "off",
+              fullScreenOffsetContainer: "",
+              fullScreenOffset: "0",
+              disableProgressBar: "on",
+              hideThumbsOnMobile: "off",
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              debugMode: false,
+              fallbacks: {
+                simplifyAll: "off",
+                disableFocusListener: false,
+              },
+            });
+        }
+      }); /*ready*/
+    </script>
+  </body>
+</html>
