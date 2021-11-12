@@ -28,3 +28,19 @@
      - index.html : 메인 페이지
      - result.html : 결과 페이지
        - 지금은 index.html 에서 "go-scan" 버튼 누르면 바로 result.html로 넘어가고 임의로 제품 하나 db에서 읽고 불러오는 걸로 설정해 놨고, 여기서 버튼 누르면 바코드 찍는 창으로 넘어가는 거 추가하면 될 것 같습니다.
+
+## 회의 2021-11-12
+
+~11/21까지
+
+1. git open source 각자 commit 한거 comment 남기기
+2. 웹페이지에 api 넣기, version control
+3. 바코드 찍는 코드
+4. crolling
+
+~11/
+
+1. 영상
+2. 발표자료
+3. png 로고
+4. 깃 readme 수정
