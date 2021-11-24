@@ -65,6 +65,7 @@
 
 > 1. 서비스 기획
 > 2. 바코드 인식기능 구현
+> 3. Git repository 관리
 
 - 김수민: DB engineer
 
