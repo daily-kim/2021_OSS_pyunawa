@@ -24,6 +24,8 @@
 ## 1. Releases
 
 - v.0.1.0 - Main page, Result page 생성
+- v.0.2.0 - 바코드, 편의점 크롤링
+- v.0.3.0 - 이미지 수정, 버튼 삭제
 
 ## 2. History
 
