@@ -16,6 +16,7 @@ var query1 = market1.where("prodID", "==", target);
 var query2 = market2.where("prodID", "==", target);
 var query3 = market3.where("prodID", "==", target);
 var query4 = market4.where("prodID", "==", target);
+var query5 = market5.where("prodID", "==", target); //cu 편의점 사이트에서 크롤링한 정보
 
 //7-ELEVEN 에서 해당 제품 불러오기
 query1

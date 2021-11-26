@@ -15,6 +15,7 @@ var market1 = db.collection("7-ELEVEN");
 var market2 = db.collection("CU");
 var market3 = db.collection("E-MART");
 var market4 = db.collection("GS25");
+var market5 = db.collection("ALL");
 
 ////////아래는 저장 예시 코드 : set을 통해서 값 저장 /////////
 
@@ -235,6 +236,52 @@ const gs25 = async (page) => {
 };
 for (let q = 1; q < 61; q++) {
   gs25(String(q));
+}
+
+//CU 편의점에서 크롤링한 모든 제품 정보들
+const allProdgetHTML = async (page) => {
+  try {
+    return await axios.get(
+      "https://cu.bgfretail.com/product/view.do?category=product&gdIdx=" + page
+    );
+  } catch (err) {
+    console.log(err);
+  }
+};
+const allProd = async (page) => {
+  const html = await allProdgetHTML(page);
+  const $ = cheerio.load(html.data);
+  const $prodinfo = $(".gnbView");
+  const imageNode = $prodinfo
+    .find("div > div.prodDetailWrap > div.prodDetail > div.prodDetail-w > img")
+    .attr("src");
+  if ("" !== imageNode) {
+    const priceNode = $prodinfo
+      .find(
+        "div > div.prodDetailWrap > div.prodDetail > div.prodDetail-e > div > dl:nth-child(1) > dd > p > span"
+      )
+      .text();
+    market5.doc(imageNode.substr(imageNode.length - 17, 13)).set({
+      prodID: imageNode.substr(imageNode.length - 17, 13),
+      prodName: $prodinfo
+        .find(
+          "div > div.prodDetailWrap > div.prodDetail > div.prodDetail-e > p"
+        )
+        .text(),
+      prodType: $prodinfo
+        .find(
+          "div > div.prodDetailWrap > div.hidden > ul.location > li:nth-child(2)"
+        )
+        .text(),
+      prodEventType: null,
+      prodPrice: parseInt(priceNode.replace(/,/, "")),
+      prodImg: imageNode,
+    });
+    console.log(allInfo);
+  }
+};
+for (let i = 1; i < 14355; i++) {
+  allProd(String(i));
 }
 
 ////////
