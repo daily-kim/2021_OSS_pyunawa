@@ -10,7 +10,7 @@
 
 -> 해당 제품이 없었을 떄 처리하기
 */
-var target = "서울)딸기우유300ml"; //바코드 스캔해서 알 수 있는 고유 제품 key 값 저장
+var target = ""; //바코드 스캔해서 알 수 있는 고유 제품 key 값 저장
 
 var query1 = market1.where("prodID", "==", target);
 var query2 = market2.where("prodID", "==", target);
