@@ -75,3 +75,8 @@
 > 2.  데이터베이스 관리
 
 ## 6. [License](https://github.com/JiyunIm00/ossp_final_project/blob/main/LICENSE)
+<<<<<<< HEAD
+=======
+
+> > > > > > > ff2d427e1f7c3b4a71bf737be37ecaa04e2e5ca4
+>>>>>>> 36414c9c4ab2ec73f12f504b78935c1fe1d089a5

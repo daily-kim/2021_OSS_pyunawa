@@ -1,0 +1,25 @@
+{
+  "name": "2021_OSS_pyunawa",
+  "version": "1.0.0",
+  "description": "## 2021 2학기 오픈소스 소프트웨어 실습",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daily-kim/2021_OSS_pyunawa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daily-kim/2021_OSS_pyunawa/issues"
+  },
+  "homepage": "https://github.com/daily-kim/2021_OSS_pyunawa#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10"
+  },
+  "devDependencies": {}
+}

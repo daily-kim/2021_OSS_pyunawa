@@ -10,12 +10,17 @@
 
 -> 해당 제품이 없었을 떄 처리하기
 */
+<<<<<<< HEAD
 var target = "서울)딸기우유300ml"; //바코드 스캔해서 알 수 있는 고유 제품 key 값 저장
+=======
+var target = ""; //바코드 스캔해서 알 수 있는 고유 제품 key 값 저장
+>>>>>>> 36414c9c4ab2ec73f12f504b78935c1fe1d089a5
 
 var query1 = market1.where("prodID", "==", target);
 var query2 = market2.where("prodID", "==", target);
 var query3 = market3.where("prodID", "==", target);
 var query4 = market4.where("prodID", "==", target);
+var query5 = market5.where("prodID", "==", target); //cu 편의점 사이트에서 크롤링한 정보
 
 //7-ELEVEN 에서 해당 제품 불러오기
 query1
