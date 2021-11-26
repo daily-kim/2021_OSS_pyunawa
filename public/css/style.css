@@ -491,7 +491,7 @@ h6 {
   line-height: 1.4em;
 }
 h1 {
-  font-size: 36px;
+  font-size: 30px;
 }
 h2 {
   font-size: 26px;
@@ -1062,8 +1062,12 @@ blockquote {
 }
 /* Index_2 */
 .intro-content h1 {
-  font-size: 100px;
-  font-weight: 1000;
+  font-family: "KOTRALEAP";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRALEAP.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-size: 80px;
 }
 /*--------------------------------------------------
     09. Services Section
