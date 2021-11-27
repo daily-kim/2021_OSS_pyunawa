@@ -33,7 +33,7 @@ query1
       type.innerHTML = doc.data().prodType;
       event.innerHTML = doc.data().prodEventType;
       img.innerHTML =
-        '<img src= doc.data().prodImg alt="No image" width="80", height="50"></img>';
+        '<img src=doc.data().prodImg alt="image" width="80", height="50"></img>';
       price.innerHTML =
         doc.data().prodPrice + '<span class="currency">원</span>';
 
@@ -61,7 +61,7 @@ query2
       type.innerHTML = doc.data().prodType;
       event.innerHTML = doc.data().prodEventType;
       img.innerHTML =
-        '<img src=doc.data().prodImg alt="No image" width="80", height="50"></img>';
+        '<img src=doc.data().prodImg alt="image" width="80", height="50"></img>';
       price.innerHTML =
         doc.data().prodPrice + '<span class="currency">원</span>';
     });
@@ -85,7 +85,7 @@ query3
       type.innerHTML = doc.data().prodType;
       event.innerHTML = doc.data().prodEventType;
       img.innerHTML =
-        '<img src=doc.data().prodImg alt="No image" width="80", height="50"></img>';
+        '<img src=doc.data().prodImg alt="image" width="80", height="50"></img>';
       price.innerHTML =
         doc.data().prodPrice + '<span class="currency">원</span>';
     });
@@ -108,7 +108,7 @@ query4
       type.innerHTML = doc.data().prodType;
       event.innerHTML = doc.data().prodEventType;
       img.innerHTML =
-        '<img src=doc.data().prodImg alt="No image" width="80", height="50"></img>';
+        '<img src=doc.data().prodImg alt="image" width="80", height="50"></img>';
       price.innerHTML =
         doc.data().prodPrice + '<span class="currency">원</span>';
     });

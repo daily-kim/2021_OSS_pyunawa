@@ -18,7 +18,7 @@ market1.doc("8801117762308").set({
   prodID: "8801117762308",
   prodName: "오리온)오감자찍먹바베큐",
   prodType: "과자류",
-  proEventType: null,
+  prodEventType: "Not For Sale",
   prodPrice: 1500,
   prodImg: "https://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
 });
@@ -26,7 +26,7 @@ market2.doc("8801117762308").set({
   prodID: "8801117762308",
   prodName: "오리온)오감자찍먹바베큐",
   prodType: "과자류",
-  proEventType: "2+1",
+  prodEventType: "2+1",
   prodPrice: 1500,
   prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
 });
@@ -34,7 +34,7 @@ market3.doc("8801117762308").set({
   prodID: "8801117762308",
   prodName: "오리온)오감자찍먹바베큐",
   prodType: "과자류",
-  proEventType: null,
+  prodEventType: "Not For Sale",
   prodPrice: 1500,
   prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
 });
@@ -42,7 +42,7 @@ market4.doc("8801117762308").set({
   prodID: "8801117762308",
   prodName: "오리온)오감자찍먹바베큐",
   prodType: "과자류",
-  proEventType: null,
+  prodEventType: "Not For Sale",
   prodPrice: 1500,
   prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
 });
