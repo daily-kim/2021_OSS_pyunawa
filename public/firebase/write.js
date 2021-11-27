@@ -20,13 +20,13 @@ market1.doc("8801117762308").set({
   prodType: "과자류",
   prodEventType: "Not For Sale",
   prodPrice: 1500,
-  prodImg: "https://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
 });
 market2.doc("8801117762308").set({
   prodID: "8801117762308",
   prodName: "오리온)오감자찍먹바베큐",
   prodType: "과자류",
-  prodEventType: "2+1",
+  prodEventType: "2+1 행사 상품",
   prodPrice: 1500,
   prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
 });
@@ -45,4 +45,70 @@ market4.doc("8801117762308").set({
   prodEventType: "Not For Sale",
   prodPrice: 1500,
   prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
+});
+
+market1.doc("0000000342400").set({
+  prodID: "0000000342400",
+  prodName: "롯데)허쉬밀크초콜릿",
+  prodType: "과자류",
+  prodEventType: "2+1 행사 상품",
+  prodPrice: 1500,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/0000000342400.jpg",
+});
+market2.doc("0000000342400").set({
+  prodID: "0000000342400",
+  prodName: "롯데)허쉬밀크초콜릿",
+  prodType: "과자류",
+  prodEventType: "2+1 행사 상품",
+  prodPrice: 1500,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/0000000342400.jpg",
+});
+market3.doc("0000000342400").set({
+  prodID: "0000000342400",
+  prodName: "롯데)허쉬밀크초콜릿",
+  prodType: "과자류",
+  prodEventType: "2+1 행사 상품",
+  prodPrice: 1500,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/0000000342400.jpg",
+});
+market4.doc("0000000342400").set({
+  prodID: "0000000342400",
+  prodName: "롯데)허쉬밀크초콜릿",
+  prodType: "과자류",
+  prodEventType: "Not For Sale",
+  prodPrice: 1500,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/0000000342400.jpg",
+});
+
+market1.doc("8801115134213").set({
+  prodID: "8801115134213",
+  prodName: "서울)딸기우유300ml",
+  prodType: "음료",
+  prodEventType: "2+1 행사 상품",
+  prodPrice: 1650,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801115134213.jpg",
+});
+market2.doc("8801115134213").set({
+  prodID: "8801115134213",
+  prodName: "서울)딸기우유300ml",
+  prodType: "음료",
+  prodEventType: "2+1 행사 상품",
+  prodPrice: 1650,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801115134213.jpg",
+});
+market3.doc("8801115134213").set({
+  prodID: "8801115134213",
+  prodName: "서울)딸기우유300ml",
+  prodType: "음료",
+  prodEventType: "2+1 행사 상품",
+  prodPrice: 1650,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801115134213.jpg",
+});
+market4.doc("8801115134213").set({
+  prodID: "8801115134213",
+  prodName: "서울)딸기우유300ml",
+  prodType: "음료",
+  prodEventType: "2+1 행사 상품",
+  prodPrice: 1650,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801115134213.jpg",
 });
