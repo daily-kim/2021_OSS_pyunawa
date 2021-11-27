@@ -14,37 +14,37 @@ var market3 = db.collection("E-MART");
 var market4 = db.collection("GS25");
 
 ////////아래는 저장 예시 코드 : set을 통해서 값 저장 /////////
-market1.doc("8801117762308").set({
-  prodID: "8801117762308",
-  prodName: "오리온)오감자찍먹바베큐",
+market1.doc("8801117752804").set({
+  prodID: "8801117752804",
+  prodName: "오리온)오감자그라탕1200",
   prodType: "과자류",
   prodEventType: "Not For Sale",
-  prodPrice: 1500,
-  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
+  prodPrice: 1200,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117752804.jpg",
 });
-market2.doc("8801117762308").set({
-  prodID: "8801117762308",
-  prodName: "오리온)오감자찍먹바베큐",
+market2.doc("8801117752804").set({
+  prodID: "8801117752804",
+  prodName: "오리온)오감자그라탕1200",
+  prodType: "과자류",
+  prodEventType: "Not For Sale",
+  prodPrice: 1200,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117752804.jpg",
+});
+market3.doc("8801117752804").set({
+  prodID: "8801117752804",
+  prodName: "오리온)오감자그라탕1200",
   prodType: "과자류",
   prodEventType: "2+1 행사 상품",
-  prodPrice: 1500,
-  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
+  prodPrice: 1200,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117752804.jpg",
 });
-market3.doc("8801117762308").set({
-  prodID: "8801117762308",
-  prodName: "오리온)오감자찍먹바베큐",
+market4.doc("8801117752804").set({
+  prodID: "8801117752804",
+  prodName: "오리온)오감자그라탕1200",
   prodType: "과자류",
   prodEventType: "Not For Sale",
-  prodPrice: 1500,
-  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
-});
-market4.doc("8801117762308").set({
-  prodID: "8801117762308",
-  prodName: "오리온)오감자찍먹바베큐",
-  prodType: "과자류",
-  prodEventType: "Not For Sale",
-  prodPrice: 1500,
-  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117762308.jpg",
+  prodPrice: 1200,
+  prodImg: "http://bgf-cu.xcache.kinxcdn.com/product/8801117752804.jpg",
 });
 
 market1.doc("0000000342400").set({
