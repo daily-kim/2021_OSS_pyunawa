@@ -15,7 +15,7 @@
 2. 설명  
 ![image](https://user-images.githubusercontent.com/50107564/143673927-b87c9827-a228-43d4-b375-bfa38fb7a18f.png)
 3. 결과 페이지  
-4. demo 동영상
+4. demo 동영상  
 [youtube](https://youtu.be/M84WRA6555E)  
 
 ## How to use  
