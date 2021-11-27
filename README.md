@@ -2,7 +2,7 @@
 
 ## Overview
 
-<img width="400" alt="thumbnailimage" src="https://user-images.githubusercontent.com/90249131/143259037-9278699a-9b21-4db6-b726-2ed5896fd323.png">\
+<img width="400" alt="thumbnailimage" src="https://user-images.githubusercontent.com/90249131/143259037-9278699a-9b21-4db6-b726-2ed5896fd323.png">
 
 - 누구나 한번쯤은 편의점에서 콜라 하나를 사먹은 다음날 다른 편의점에서 1+1 행사를 하는 것 을 보고 왠지 모르게 아쉬웠던 기억이 있을 것 이다. \
   [CU](https://cu.bgfretail.com/event/plus.do), [GS25](http://gs25.gsretail.com/gscvs/ko/products/event-goods), [세븐일레븐](https://www.7-eleven.co.kr/product/presentList.asp) 등 대다수의 편의점 회사들이 진행되는 행사정보를 홈페이지에 안내하지만, 무언가 하나를 사기위해 모든 회사의 페이지를 살펴보는건 꽤나 귀찮은 일이다.\
@@ -11,9 +11,9 @@
 
 ## Example
 1. main 화면  
-![image](https://user-images.githubusercontent.com/50107564/143673854-a6acac04-841e-4d2f-976d-6d71f0b243ed.png)\
+![image](https://user-images.githubusercontent.com/50107564/143673854-a6acac04-841e-4d2f-976d-6d71f0b243ed.png)
 2. 설명  
-![image](https://user-images.githubusercontent.com/50107564/143673927-b87c9827-a228-43d4-b375-bfa38fb7a18f.png)\
+![image](https://user-images.githubusercontent.com/50107564/143673927-b87c9827-a228-43d4-b375-bfa38fb7a18f.png)
 3. 결과 페이지  
 4. demo 동영상
 (서비스 사용 동영상 추가예정)
