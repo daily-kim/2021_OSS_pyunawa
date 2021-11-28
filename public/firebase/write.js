@@ -16,7 +16,7 @@ var market4 = db.collection("GS25");
 ////////아래는 저장 예시 코드 : set을 통해서 값 저장 /////////
 market1.doc("8801117752804").set({
   prodID: "8801117752804",
-  prodName: "오리온)오감자그라탕1200",
+  prodName: "오리온)오감자그라탕1200.test",
   prodType: "과자류",
   prodEventType: "Not For Sale",
   prodPrice: 1200,

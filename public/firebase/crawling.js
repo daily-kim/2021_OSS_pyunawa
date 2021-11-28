@@ -273,8 +273,10 @@ const gs25 = async (page) => {
 };
 for (let i = 1; i < 54; i++) {
   gs25(String(i));
+
 }
 
+/*
 //CU 편의점에서 크롤링한 모든 제품 정보들
 const allProdgetHTML = async (page) => {
   try {
@@ -325,7 +327,34 @@ const allProd = async (page) => {
     };
     const prodCrawling = JSON.stringify(market);
     console.log(prodCrawling);
-
+  }
+};
+for (let i = 1; i < 14355; i++) {
+  allProd(String(i));
+}
+const allProd = async (page) => {
+  const html = await allProdgetHTML(page);
+  const $ = cheerio.load(html.data);
+  const $prodinfo = $(".gnbView");
+  const imageNode = $prodinfo
+    .find("div > div.prodDetailWrap > div.prodDetail > div.prodDetail-w > img")
+    .attr("src");
+  if ("" !== imageNode) {
+    const key = imageNode.substr(imageNode.length - 17, 13);
+    const priceNode = $prodinfo
+      .find(
+        "div > div.prodDetailWrap > div.prodDetail > div.prodDetail-e > div > dl:nth-child(1) > dd > p > span"
+      )
+      .text();
+    const price = parseInt(priceNode.replace(/,/, ""));
+    const name = $prodinfo
+      .find("div > div.prodDetailWrap > div.prodDetail > div.prodDetail-e > p")
+      .text();
+    const type = $prodinfo
+      .find(
+        "div > div.prodDetailWrap > div.hidden > ul.location > li:nth-child(2)"
+      )
+      .text();
     const market = {
       __collections__: {
         CU: {
@@ -343,7 +372,34 @@ const allProd = async (page) => {
     };
     const prodCrawling = JSON.stringify(market);
     console.log(prodCrawling);
-
+  }
+};
+for (let i = 1; i < 14355; i++) {
+  allProd(String(i));
+}
+const allProd = async (page) => {
+  const html = await allProdgetHTML(page);
+  const $ = cheerio.load(html.data);
+  const $prodinfo = $(".gnbView");
+  const imageNode = $prodinfo
+    .find("div > div.prodDetailWrap > div.prodDetail > div.prodDetail-w > img")
+    .attr("src");
+  if ("" !== imageNode) {
+    const key = imageNode.substr(imageNode.length - 17, 13);
+    const priceNode = $prodinfo
+      .find(
+        "div > div.prodDetailWrap > div.prodDetail > div.prodDetail-e > div > dl:nth-child(1) > dd > p > span"
+      )
+      .text();
+    const price = parseInt(priceNode.replace(/,/, ""));
+    const name = $prodinfo
+      .find("div > div.prodDetailWrap > div.prodDetail > div.prodDetail-e > p")
+      .text();
+    const type = $prodinfo
+      .find(
+        "div > div.prodDetailWrap > div.hidden > ul.location > li:nth-child(2)"
+      )
+      .text();
     const market = {
       __collections__: {
         "E-MART": {
@@ -361,7 +417,34 @@ const allProd = async (page) => {
     };
     const prodCrawling = JSON.stringify(market);
     console.log(prodCrawling);
-
+  }
+};
+for (let i = 1; i < 14355; i++) {
+  allProd(String(i));
+}
+const allProd = async (page) => {
+  const html = await allProdgetHTML(page);
+  const $ = cheerio.load(html.data);
+  const $prodinfo = $(".gnbView");
+  const imageNode = $prodinfo
+    .find("div > div.prodDetailWrap > div.prodDetail > div.prodDetail-w > img")
+    .attr("src");
+  if ("" !== imageNode) {
+    const key = imageNode.substr(imageNode.length - 17, 13);
+    const priceNode = $prodinfo
+      .find(
+        "div > div.prodDetailWrap > div.prodDetail > div.prodDetail-e > div > dl:nth-child(1) > dd > p > span"
+      )
+      .text();
+    const price = parseInt(priceNode.replace(/,/, ""));
+    const name = $prodinfo
+      .find("div > div.prodDetailWrap > div.prodDetail > div.prodDetail-e > p")
+      .text();
+    const type = $prodinfo
+      .find(
+        "div > div.prodDetailWrap > div.hidden > ul.location > li:nth-child(2)"
+      )
+      .text();
     const market = {
       __collections__: {
         GS25: {
@@ -384,5 +467,5 @@ const allProd = async (page) => {
 for (let i = 1; i < 14355; i++) {
   allProd(String(i));
 }
-
 ////////
+*/
