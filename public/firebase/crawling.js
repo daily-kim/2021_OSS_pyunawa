@@ -273,6 +273,7 @@ const gs25 = async (page) => {
 };
 for (let i = 1; i < 54; i++) {
   gs25(String(i));
+
 }
 
 /*

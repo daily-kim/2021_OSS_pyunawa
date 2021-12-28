@@ -1,0 +1,165 @@
+{
+  "__collections__": {
+    "7-ELEVEN": {
+      "0000000342400": {
+        "prodID": "0000000342400",
+        "prodName": "롯데)허쉬밀크초콜릿--test",
+        "prodEventType": "2+1 행사 상품",
+        "prodPrice": 1500,
+        "prodType": "과자류",
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/0000000342400.jpg",
+        "__collections__": {}
+      },
+      "8801115134213": {
+        "prodType": "음료",
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/8801115134213.jpg",
+        "prodName": "서울)딸기우유300ml",
+        "prodID": "8801115134213",
+        "prodEventType": "2+1 행사 상품",
+        "prodPrice": 1650,
+        "__collections__": {}
+      },
+      "8801117752804": {
+        "prodType": "과자류",
+        "prodName": "오리온)오감d자그라탕1200",
+        "prodID": "8801117752804",
+        "prodPrice": 1200,
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/8801117752804.jpg",
+        "prodEventType": "Not For Sale",
+        "__collections__": {}
+      },
+      "milk1": {
+        "prodPrice": 1000,
+        "prodName": "바나나 우유",
+        "prodEventType": "1+1 행사 상품",
+        "prodImg": "https://cdn.pixabay.com/photo/2015/04/14/12/25/drink-722061_960_720.jpg",
+        "prodID": "milk1",
+        "prodType": "음료",
+        "__collections__": {}
+      }
+    },
+    "CU": {
+      "0000000342400": {
+        "prodPrice": 1500,
+        "prodEventType": "2+1 행사 상품",
+        "prodName": "롯데)허쉬밀크초콜릿",
+        "prodType": "과자류",
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/0000000342400.jpg",
+        "prodID": "0000000342400",
+        "__collections__": {}
+      },
+      "8801115134213": {
+        "prodEventType": "2+1 행사 상품",
+        "prodPrice": 1650,
+        "prodID": "8801115134213",
+        "prodType": "음료",
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/8801115134213.jpg",
+        "prodName": "서울)딸기우유300ml",
+        "__collections__": {}
+      },
+      "8801117752804": {
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/8801117752804.jpg",
+        "prodType": "과자류",
+        "prodPrice": 1200,
+        "prodID": "8801117752804",
+        "prodName": "오리온)오감자그라탕1200",
+        "prodEventType": "Not For Sale",
+        "__collections__": {}
+      },
+      "cake1": {
+        "prodEventType": "포인트 할인",
+        "prodName": "크림치즈 케익",
+        "prodType": "케익",
+        "prodPrice": 3500,
+        "prodImg": "https://cdn.pixabay.com/photo/2016/02/29/00/19/cake-1227842_960_720.jpg",
+        "prodID": "cake1",
+        "__collections__": {}
+      },
+      "milk1": {
+        "prodName": "바나나 우유",
+        "prodImg": "https://cdn.pixabay.com/photo/2015/04/14/12/25/drink-722061_960_720.jpg",
+        "prodID": "milk1",
+        "prodType": "음료",
+        "prodEventType": "포인트 할인",
+        "prodPrice": 900,
+        "__collections__": {}
+      }
+    },
+    "E-MART": {
+      "0000000342400": {
+        "prodID": "0000000342400",
+        "prodName": "롯데)허쉬밀크초콜릿",
+        "prodPrice": 1500,
+        "prodEventType": "2+1 행사 상품",
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/0000000342400.jpg",
+        "prodType": "과자류",
+        "__collections__": {}
+      },
+      "8801115134213": {
+        "prodPrice": 1650,
+        "prodID": "8801115134213",
+        "prodType": "음료",
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/8801115134213.jpg",
+        "prodName": "서울)딸기우유300ml",
+        "prodEventType": "2+1 행사 상품",
+        "__collections__": {}
+      },
+      "8801117752804": {
+        "prodPrice": 1200,
+        "prodType": "과자류",
+        "prodID": "8801117752804",
+        "prodEventType": "2+1 행사 상품",
+        "prodName": "오리온)오감자그라탕1200",
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/8801117752804.jpg",
+        "__collections__": {}
+      },
+      "milk1": {
+        "prodEventType": "없음",
+        "prodType": "음료",
+        "prodName": "바나나 우유",
+        "prodID": "milk1",
+        "prodPrice": 900,
+        "prodImg": "https://cdn.pixabay.com/photo/2015/04/14/12/25/drink-722061_960_720.jpg",
+        "__collections__": {}
+      }
+    },
+    "GS25": {
+      "0000000342400": {
+        "prodType": "과자류",
+        "prodEventType": "Not For Sale",
+        "prodPrice": 1500,
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/0000000342400.jpg",
+        "prodName": "롯데)허쉬밀크초콜릿",
+        "prodID": "0000000342400",
+        "__collections__": {}
+      },
+      "8801115134213": {
+        "prodPrice": 1650,
+        "prodID": "8801115134213",
+        "prodName": "서울)딸기우유300ml",
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/8801115134213.jpg",
+        "prodEventType": "2+1 행사 상품",
+        "prodType": "음료",
+        "__collections__": {}
+      },
+      "8801117752804": {
+        "prodType": "과자류",
+        "prodImg": "http://bgf-cu.xcache.kinxcdn.com/product/8801117752804.jpg",
+        "prodPrice": 1200,
+        "prodEventType": "Not For Sale",
+        "prodID": "8801117752804",
+        "prodName": "오리온)오감자그라탕1200",
+        "__collections__": {}
+      },
+      "milk1": {
+        "prodType": "음료",
+        "prodName": "바나나 우유",
+        "prodImg": "https://cdn.pixabay.com/photo/2015/04/14/12/25/drink-722061_960_720.jpg",
+        "prodPrice": 1500,
+        "prodEventType": "2+1 행사 상품",
+        "prodID": "milk1",
+        "__collections__": {}
+      }
+    }
+  }
+}
