@@ -275,6 +275,7 @@ for (let i = 1; i < 54; i++) {
   gs25(String(i));
 }
 
+/*
 //CU 편의점에서 크롤링한 모든 제품 정보들
 const allProdgetHTML = async (page) => {
   try {
